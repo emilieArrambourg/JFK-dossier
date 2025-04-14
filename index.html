@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<audio autoplay loop>
+<audio id="bg-audio" loop>
   <source src="radio_static.mp3" type="audio/mpeg">
 </audio>
+<button onclick="document.getElementById('bg-audio').play(); this.style.display='none';" style="position:fixed;top:10px;left:10px;z-index:999;">Activer le son</button>
+
   <header>
     <div id="confidential">CONFIDENTIEL</div>
     <h1>DOSSIER CLASSÉ – NIVEAU OMEGA</h1>
@@ -17,6 +19,7 @@
   </header>
 
   <main>
+    <img src="jfk-image.jpg" alt="Photo JFK Dallas" style="max-width:100%;margin-bottom:30px;">
     <section>
       <h2>EXTRAIT 1 – Témoignage anonyme</h2>
       <p>Je reviens sur cette image encore et encore. La foule applaudit, insouciante. Le président sourit. Jackie regarde droit devant elle, figée, presque trop calme.</p>
@@ -80,17 +83,7 @@
       <p>Ce reflet.</p>
       <p>Et la certitude qu’au moment même où Kennedy a souri à la foule… quelqu’un — ou quelque chose — le regardait déjà mourir.</p>
     </section>
-  
-    <section>
-      <button onclick="document.getElementById('secret-doc').style.display='block';">Afficher document classifié</button>
-      <div id="secret-doc" style="display:none; margin-top:20px; padding:20px; background:#222; border:1px solid #555;">
-        <h3>Document Classifié : Fragment CHRYSALIS</h3>
-        <p>Protocole E-7 confirmé. La cohabitation est effective dans les zones à forte visibilité médiatique. Neutralisation du vecteur politique réussie. Le sujet K-1963 n’a pas été stabilisé à temps.</p>
-        <p>Prochaine activation prévue : 2029 – Phase 2 – Nom de code : ORION.</p>
-      </div>
-    </section>
-    </main>
-    
+  </main>
 
   <footer>
     <p>Fuite non vérifiée – Source anonyme – 2025</p>
